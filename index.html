@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <title>Kyezka</title>
@@ -23,31 +21,32 @@
         <div class="line"></div>
     </div>
     <section>
-        <img src="img/K (2).gif" alt="" class="animate__animated animate__fadeInDown" />
-        <a class="animate__animated animate__fadeInDown" href="">SOCIALS</a>
-        <div class="container">
-            <a class="animate__animated animate__fadeInDown" target="_blank"
-                href=""><i
-                    class="fa-brands fa-youtube"></i> Youtube</a>
-            <a class="animate__animated animate__fadeInDown" target="_blank"
-                href=""><i
-                    class="fa-brands fa-twitter"></i> Twitter</a>
-            <a class="animate__animated animate__fadeInDown" target="_blank"
-                href=""><i
-                    class="fa-brands fa-twitch"></i> Twitch</a>
-            <a  class="animate__animated animate__fadeInDown"target="_blank"
-                href=""><i
-                    class="fa-brands fa-discord"></i> Discord</a>
-            <a class="animate__animated animate__fadeInDown" target="_blank"
-                href="r"><i
-                    class="fa-brands fa-instagram"></i> Instagram</a>
+        <audio id="myAudio" autoplay>
+            <source src="sound/blast-138451.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="pause-btn" onclick="pauseAudio()">
+            <span class="fas fa-pause"></span>
+        </button>
+
+        <img src="img/K (2).gif" alt="" class="animate__animated animate__fadeInDown animate__delay-1s" />
+        <a class="animate__animated animate__fadeInDown animate__delay-2s" href="">SOCIALS</a>
+        <div class="container animate__animated animate__fadeInUp animate__delay-3s">
+            <a target="_blank" href=""><i class="fa-brands fa-youtube"></i> Youtube</a>
+            <a target="_blank" href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a target="_blank" href=""><i class="fa-brands fa-twitch"></i> Twitch</a>
+            <a target="_blank" href=""><i class="fa-brands fa-discord"></i> Discord</a>
+            <a target="_blank" href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+
+  
         </div>
-        
+
     </section>
- 
+
     <footer>
-        <h1 class="animate__animated animate__fadeInDown">Todos los derechos reservados 2023 ©</h1>
+        <h1 class="animate__animated animate__fadeInDown animate__delay-4s">Todos los derechos reservados 2023 ©</h1>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>

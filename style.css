@@ -21,6 +21,51 @@ body {
   overflow: hidden;
 }
 
+.pause-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+			padding: 20px;
+			background-color: #fff;
+			color: #333;
+			border: 3px solid #333;
+			border-radius: 10px;
+			background-clip: padding-box;
+			animation: cambio-color 5s infinite linear;
+
+}
+@keyframes cambio-color {
+  0% {
+    border-color: #333;
+  }
+
+  25% {
+    border-color: #f00;
+  }
+
+  50% {
+    border-color: #0f0;
+  }
+
+  75% {
+    border-color: #00f;
+  }
+
+  100% {
+    border-color: #333;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .pause-btn{
+    padding: 15px;
+  }
+}
+
+
 .lines {
   position: absolute;
   top: 0;
@@ -202,4 +247,4 @@ footer {
   margin-top: 90px;
 }
 
-/*# sourceMappingURL=style.css.map */
+
