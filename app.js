@@ -12,3 +12,9 @@ function pauseAudio() {
         icon.classList.add('fa-play'); // agrega la clase fa-play
     }
 }
+
+var audio = document.getElementById("myAudio");
+setTimeout(function() {
+  audio.autoplay = true;
+  audio.load();
+}, 5000);
